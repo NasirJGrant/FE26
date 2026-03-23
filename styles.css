@@ -115,6 +115,11 @@ ul, ol {
     width: 100%;
   }
 
+  .active-link {
+  background: #e6eefc;
+  color: #0d3ea8;
+}
+
   .gallery {
     grid-template-columns: 1fr;
   }
