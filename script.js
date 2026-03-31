@@ -1,32 +1,45 @@
-const navLinks = document.querySelectorAll('.site-nav a');
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+const themeBtn = document.getElementById("themeBtn");
+const learnBtn = document.getElementById("learnBtn");
+const goalBtn = document.getElementById("goalBtn");
+const tabButtons = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
+const faqQuestions = document.querySelectorAll(".faq-question");
 
-navLinks.forEach(link => {
-  link.addEventListener('click', function () {
-    navLinks.forEach(l => l.classList.remove('active-link'));
-    this.classList.add('active-link');
-  });
+menuBtn.addEventListener("click", function () {
+  navLinks.classList.toggle("show");
 });
 
+themeBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+});
 
-const sections = document.querySelectorAll('main section');
+learnBtn.addEventListener("click", function () {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+});
 
-sections.forEach(section => {
-  section.addEventListener('click', function () {
-    sections.forEach(s => {
-      s.style.borderColor = '#ddd';
-      s.style.backgroundColor = '#ffffff';
+goalBtn.addEventListener("click", function () {
+  alert("LinkUp was designed to make nightlife planning faster, easier, and more social.");
+});
+
+tabButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    tabButtons.forEach(function (btn) {
+      btn.classList.remove("active");
     });
-    this.style.borderColor = '#1855d3';
-    this.style.backgroundColor = '#f0f5ff';
+
+    tabContents.forEach(function (content) {
+      content.classList.remove("active");
+    });
+
+    button.classList.add("active");
+    document.getElementById(button.dataset.tab).classList.add("active");
   });
 });
 
-
-const overview = document.querySelector('#overview');
-
-overview.addEventListener('click', function () {
-  const alreadyAdded = this.querySelector('.extra-note');
-  if (!alreadyAdded) {
-    this.innerHTML += '<p class="extra-note"><em>📡 Signal detected. Someone is still listening.</em></p>';
-  }
+faqQuestions.forEach(function (question) {
+  question.addEventListener("click", function () {
+    question.parentElement.classList.toggle("open");
+  });
 });

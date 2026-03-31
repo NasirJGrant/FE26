@@ -1,125 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Last Signal - Wikipedia</title>
-
-  <meta name="author" content="Nasir Grant" />
-  <meta name="keywords" content="science fiction, short story, signal, survival, fiction" />
-  <meta name="description" content="The Last Signal is a fictional short story about isolation, technology, and human survival." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkUp Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="page">
+<body>
   <header class="site-header">
-    <h1>The Last Signal</h1>
-
-    <nav class="site-nav" aria-label="Page sections">
-      <ul class="nav-list">
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#plot">Plot</a></li>
-        <li><a href="#themes">Themes</a></li>
-        <li><a href="#characters">Characters</a></li>
-        <li><a href="#reception">Reception</a></li>
-        <li><a href="#references">References</a></li>
+    <nav class="nav">
+      <div class="logo">LinkUp</div>
+      <button id="menuBtn" class="menu-btn">Menu</button>
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="overview">
-      <h2>Overview</h2>
-      <p>
-        <strong>The Last Signal</strong> is a fictional science-fiction short story that follows a lone
-        operator maintaining a communication tower after global systems collapse. The story explores
-        <em>human isolation</em> and the emotional weight of waiting for a response that may never come.
-      </p>
-    </section>
-
-    <section id="plot">
-      <h3>Plot</h3>
-      <p>
-        After a worldwide blackout disables modern communication, a signal technician named Elias
-        remains stationed at a remote broadcast tower. Every day, he sends out a repeating message,
-        hoping someone is still listening.
-      </p>
-      <p>
-        One evening, a faint reply breaks through the static. The message is fragmented but confirms
-        that Elias is not alone, forcing him to reconsider his isolation.
-      </p>
-    </section>
-
-    <section id="themes">
-      <h4>Themes</h4>
-      <ul>
-        <li>Isolation versus connection</li>
-        <li>The role of technology in humanity</li>
-        <li>Hope in uncertain environments</li>
-      </ul>
-    </section>
-
-    <section id="characters">
-      <h5>Main Characters</h5>
-      <ol>
-        <li><strong>Elias</strong> – A former communications engineer and the protagonist</li>
-        <li>The Unknown Voice – A distant survivor responding to the signal</li>
-      </ol>
-    </section>
-
-    <section id="reception">
-      <h6>Reception</h6>
-      <p>
-        Readers often interpret the broadcast as a <mark>symbol of persistence</mark> and survival
-        despite overwhelming silence.
-      </p>
-    </section>
-
-    <section id="gallery">
-      <h2>Image Gallery</h2>
-
-      <div class="gallery">
-        <figure class="gallery-item">
-          <img src="images/tower.jpeg" width="300" height="200" alt="A large radio communication tower" />
-          <figcaption>Broadcast tower</figcaption>
-        </figure>
-
-        <figure class="gallery-item">
-          <img src="images/radio.jpg" width="300" height="200" alt="Old radio equipment used for long-distance communication" />
-          <figcaption>Radio equipment</figcaption>
-        </figure>
-
-        <figure class="gallery-item">
-          <img src="images/landscape.jpg" width="300" height="200" alt="Empty landscape representing isolation" />
-          <figcaption>Isolated landscape</figcaption>
-        </figure>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Real-Time Event Discovery for College Students</h1>
+        <p>LinkUp helps students find events, view live crowd activity, and coordinate plans with friends in real time.</p>
+        <div class="hero-buttons">
+          <button id="learnBtn">Learn More</button>
+          <button id="themeBtn">Change Theme</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/hero-collage.png" alt="LinkUp app screens collage">
       </div>
     </section>
 
-    <section id="references">
-      <h2>References</h2>
-      <p>
-        Learn more about science fiction at
-        <a href="https://en.wikipedia.org/wiki/Science_fiction">Wikipedia</a>
-        and explore symbolism at
-        <a href="https://literarydevices.net/symbolism/">Literary Devices</a>.
-      </p>
+    <section id="about" class="section">
+      <h2>About the App</h2>
+      <p>Planning a night out should be simple. LinkUp was designed to reduce the stress of finding good events, checking if places are actually active, and deciding where to go with friends.</p>
+      <p>The app focuses on real-time event discovery, crowd visibility, and quick social planning for college students and young adults.</p>
+    </section>
 
-      <p>
-        The story emphasizes <em>hope</em> and <strong>resilience</strong> through minimal dialogue and
-        environmental storytelling.
-      </p>
+    <section id="features" class="section">
+      <h2>Core Features</h2>
+      <div class="feature-controls">
+        <button class="tab-btn active" data-tab="tab1">Map View</button>
+        <button class="tab-btn" data-tab="tab2">Friend Planning</button>
+        <button class="tab-btn" data-tab="tab3">Vibe Checks</button>
+      </div>
+
+      <div id="tab1" class="tab-content active">
+        <h3>Live Map Discovery</h3>
+        <p>Users can view events on a map and quickly understand where activity is happening nearby.</p>
+      </div>
+
+      <div id="tab2" class="tab-content">
+        <h3>Social Coordination</h3>
+        <p>LinkUp helps students coordinate with friends and spend less time stuck in group chats.</p>
+      </div>
+
+      <div id="tab3" class="tab-content">
+        <h3>Event Mood Tracking</h3>
+        <p>Quick vibe checks help users understand the type of crowd, energy, and experience before going out.</p>
+      </div>
+    </section>
+
+    <section id="research" class="section grid-section">
+      <div class="card">
+        <h2>Wireframes</h2>
+        <img src="assets/wireframes.png" alt="Low fidelity LinkUp wireframes">
+        <p>Early sketches focused on map-based discovery, event browsing, and event details.</p>
+      </div>
+
+      <div class="card">
+        <h2>Persona 1</h2>
+        <img src="assets/persona-sophia.png" alt="Sophia persona">
+        <p>Sophia represents students who want to find popular events and coordinate with friends easily.</p>
+      </div>
+
+      <div class="card">
+        <h2>Persona 2</h2>
+        <img src="assets/persona-sohn.png" alt="Sohn persona">
+        <p>Sohn represents nightlife promoters who need real-time information about where people are going.</p>
+      </div>
+
+      <div class="card">
+        <h2>Market Overview</h2>
+        <img src="assets/market-overview.png" alt="LinkUp market overview">
+        <p>Research showed problems in current platforms such as confusing interfaces, pricing complaints, and lack of live data.</p>
+      </div>
+
+      <div class="card">
+        <h2>Competitive Analysis</h2>
+        <img src="assets/competitor-analysis.png" alt="Competitor analysis chart">
+        <p>LinkUp stands out by combining local events, student-focused content, social visibility, and live comments.</p>
+      </div>
+
+      <div class="card">
+        <h2>Design Goal</h2>
+        <p>The goal of LinkUp is to help students spend less time planning and more time socializing by using simple, live, and location-based event tools.</p>
+        <button id="goalBtn">Show Goal</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>App Screens</h2>
+      <div class="gallery-grid">
+        <article class="gallery-item">
+          <img src="assets/onboarding.png" alt="Onboarding screens">
+          <h3>Onboarding</h3>
+        </article>
+
+        <article class="gallery-item">
+          <img src="assets/map-heatmap.png" alt="Map and heatmap screens">
+          <h3>Map + Heatmap</h3>
+        </article>
+
+        <article class="gallery-item">
+          <img src="assets/discover-checkout.png" alt="Discover and checkout screens">
+          <h3>Discover + Checkout</h3>
+        </article>
+
+        <article class="gallery-item">
+          <img src="assets/tickets.png" alt="Confirmation and tickets screens">
+          <h3>Tickets</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why LinkUp Works</h2>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>Real-Time Data</h3>
+          <p>Students can see where crowds are active instead of relying on outdated event pages.</p>
+        </div>
+        <div class="info-box">
+          <h3>Simple Discovery</h3>
+          <p>The app combines a clear map, event cards, and quick scanning for nearby plans.</p>
+        </div>
+        <div class="info-box">
+          <h3>Social Planning</h3>
+          <p>Friend-based decision making is a big part of nightlife planning, so LinkUp supports it directly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">Who is LinkUp for?</button>
+        <div class="faq-answer">
+          <p>LinkUp is mainly designed for college students and young adults looking for nightlife and social events.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What makes it different?</button>
+        <div class="faq-answer">
+          <p>It focuses on live popularity, social coordination, and a student-centered experience.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What was the main design focus?</button>
+        <div class="faq-answer">
+          <p>The main focus was reducing planning stress and helping users make faster decisions in real time.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Nasir Grant</p>
+    <p>LinkUp UX Case Study Landing Page</p>
   </footer>
-    <script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
